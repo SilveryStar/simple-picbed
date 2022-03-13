@@ -1,0 +1,56 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "lib": [
+            "esnext",
+            "dom",
+            "ScriptHost",
+            "DOM.Iterable"
+        ],
+        "jsx": "preserve",
+        "strict": false,
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "baseUrl": ".",
+        "paths": {
+            "/@/*": [
+                "src/*"
+            ]
+        },
+        "types": [
+            "node",
+            "vite/client"
+        ],
+        "typeRoots": [
+            "./node_modules/@types/",
+            "./types"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "incremental": true
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "src/utils/path.js",
+        "types/**/*.d.ts",
+        "types/global.d.ts",
+        "types/**/*.ts",
+        "types/shims-vue.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.js"
+    ]
+}
